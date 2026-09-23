@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wheelpaw.de</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #1a1a1a;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+      background: #2e2e2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .avatar svg {
+      width: 48px;
+      height: 48px;
+      opacity: 0.4;
+    }
+
+    .name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      width: 100%;
+      padding: 0.875rem 1.25rem;
+      border: 1px solid #ffffff;
+      border-radius: 6px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .link:hover {
+      background: #ffffff;
+      color: #1a1a1a;
+    }
+
+    .link svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    footer {
+      font-size: 0.75rem;
+      color: #555;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="avatar">
+      <!-- Pfoten-Icon -->
+      <svg viewBox="0 0 100 100" fill="currentColor">
+        <!-- Haupt-Ballen -->
+        <ellipse cx="50" cy="65" rx="22" ry="20"/>
+        <!-- Zehen -->
+        <ellipse cx="24" cy="44" rx="10" ry="13" transform="rotate(-15 24 44)"/>
+        <ellipse cx="40" cy="34" rx="10" ry="13"/>
+        <ellipse cx="60" cy="34" rx="10" ry="13"/>
+        <ellipse cx="76" cy="44" rx="10" ry="13" transform="rotate(15 76 44)"/>
+      </svg>
+    </div>
+
+    <h1 class="name">wheelpaw.de</h1>
+
+    <nav class="links">
+
+      <a class="link" href="https://instagram.wheelpaw.de" target="_blank" rel="noopener">
+        <!-- Instagram Icon -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        Instagram
+      </a>
+
+      <a class="link" href="https://blueskywheelpaw.de" target="_blank" rel="noopener">
+        <!-- Bluesky "butterfly" Icon (vereinfacht) -->
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 2.104.109 3.226.45 5.966 1.111 7.87c.716 2.076 2.658 2.764 4.505 2.47-1.763.304-3.526.608-4.51 2.847C.29 15.197.028 17.98 1.111 18.98c1.244 1.148 3.553.587 5.55-.576C9.05 16.906 11.003 14.656 12 12.31c.997 2.346 2.95 4.596 5.339 6.093 1.997 1.163 4.306 1.724 5.55.576 1.083-1 .82-3.783-.005-5.793-.984-2.24-2.747-2.543-4.51-2.847 1.847.294 3.789-.394 4.505-2.47.66-1.904 1.002-4.644.209-5.766-.659-.838-1.664-1.16-4.3.7C16.046 4.748 13.087 8.687 12 10.8Z"/>
+        </svg>
+        Bluesky
+      </a>
+
+    </nav>
+
+    <footer>wheelpaw.de</footer>
+
+  </div>
+</body>
+</html>
